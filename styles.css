@@ -88,7 +88,7 @@ button:hover {
 @media (max-width: 500px) {
   .quote-container {
     width: 343px;
-    height: 347px;
+    height: 400px;
   }
   .advice-body {
     font-family: 24px;
