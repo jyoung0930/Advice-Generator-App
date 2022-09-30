@@ -1,13 +1,7 @@
-// const container = document.querySelector(".quote-container");
+import getAdvice from "./fetch.js";
+const button = document.querySelector("button");
 
-// const URL = "https://api.adviceslip.com/advice";
-
-// async function getAdvice() {
-//   const res = await fetch(URL);
-//   const data = await res.json();
-//   const advice = data.slip.advice;
-//   const adviceID = data.slip.id;
-//   container.innerHTML = data.slip.advice;
-// }
-
-// console.log(getAdvice());
+// Get advice on initial load
+getAdvice();
+// Update advice on every click of the button
+button.addEventListener("click", getAdvice);
